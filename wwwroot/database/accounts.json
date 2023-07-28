@@ -1,0 +1,13 @@
+{
+    "users": [
+        {
+            "name": "Larry",
+            "email": "laurentiu.flaviusistrate@vodafone.com",
+            "password": "retention"
+        },
+        {
+            "email": "user2@example.com",
+            "password": "password2"
+        }
+    ]
+}

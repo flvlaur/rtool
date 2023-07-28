@@ -1,0 +1,31 @@
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\appsettings.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\RetentionTool - Naplex MVC.staticwebassets.runtime.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\RetentionTool - Naplex MVC.exe
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\RetentionTool - Naplex MVC.deps.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\RetentionTool - Naplex MVC.runtimeconfig.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\RetentionTool - Naplex MVC.dll
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\bin\Debug\net6.0\RetentionTool - Naplex MVC.pdb
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.csproj.AssemblyReference.cache
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.AssemblyInfoInputs.cache
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.AssemblyInfo.cs
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.csproj.CoreCompileInputs.cache
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.RazorAssemblyInfo.cache
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.RazorAssemblyInfo.cs
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets\msbuild.RetentionTool - Naplex MVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets\msbuild.build.RetentionTool - Naplex MVC.props
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.RetentionTool - Naplex MVC.props
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.RetentionTool - Naplex MVC.props
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\scopedcss\bundle\RetentionTool - Naplex MVC.styles.css
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\scopedcss\projectbundle\RetentionTool - Naplex MVC.bundle.scp.css
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.dll
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\refint\RetentionTool - Naplex MVC.dll
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.pdb
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\RetentionTool - Naplex MVC.genruntimeconfig.cache
+C:\Users\laure\source\repos\RetentionTool - Naplex MVC\RetentionTool - Naplex MVC\obj\Debug\net6.0\ref\RetentionTool - Naplex MVC.dll

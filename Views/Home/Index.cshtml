@@ -1,0 +1,230 @@
+﻿@{
+    ViewData["Title"] = "RetentionTool - Naplex";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-FFVffZeuTRuZTIBR95o9Z7ExRZzRFA+TlFO5bh2Bp14=" crossorigin="anonymous"></script>
+    <title>Retention Tool - Naplex</title>
+    <style>
+        body {
+            background-image: url("/background.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            /* Add any additional styles you want for the body element */
+        }
+
+        .titleRetDes {
+            --s: 0.1em; /* the thickness of the line */
+            --c: white; /* the color */
+
+            color: #0000;
+            padding-bottom: var(--s);
+            display: inline-block;
+            background: linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+            -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+            transition: 0.5s;
+        }
+
+        .titleRetDes:hover {
+            --_p: 100%;
+        }
+
+        .titleRet {
+            --s: 0.1em; /* the thickness of the line */
+            --c: white; /* the color */
+
+            color: #0000;
+            font-size: 45px;
+            padding-bottom: var(--s);
+            display: inline-block;
+            background: linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+            -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+            transition: 0.5s;
+        }
+
+        .titleRet:hover {
+            --_p: 100%;
+        }
+
+        .containerTitle {
+            display: flex;
+            flex-direction: column; /* Stack the elements vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-button {
+            margin-top: 20px;
+            background-color: #f4afc2;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-button:hover {
+            background-color: #f195ac;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-form {
+            display: none; /* Initially hide the login form */
+            margin-top: 20px;
+        }
+
+            .login-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .login-form input[type="text"],
+            .login-form input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #f4afc2;
+                border-radius: 5px;
+            }
+
+            .login-form button {
+                background-color: #f4afc2;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+                .login-form button:hover {
+                    background-color: #f195ac;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+        .back-button {
+            background-color: #f4afc2;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-right: 10px; /* Add some margin to separate the buttons */
+        }
+
+        .back-button:hover {
+            background-color: #f195ac;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Make h1 and p block-level elements */
+        .containerTitle h1,
+        .containerTitle p {
+            display: block;
+            text-align: center; /* Optionally center the text */
+        }
+
+        /* Add any additional CSS styles for the content in your page */
+    </style>
+
+     <script>
+            function btnLogin_onClick() {
+                // Get the elements
+                const titleRet = document.querySelector(".titleRet");
+                const titleRetDes = document.querySelector(".titleRetDes");
+                const loginButton = document.getElementById("loginButton");
+                const loginForm = document.getElementById("loginForm");
+
+                // Toggle visibility of elements
+                titleRet.style.display = "none";
+                titleRetDes.style.display = "none";
+                loginButton.style.display = "none";
+                loginForm.style.display = "block";
+            }
+
+            function btnBack_onClick() {
+                // Get the elements
+                const titleRet = document.querySelector(".titleRet");
+                const titleRetDes = document.querySelector(".titleRetDes");
+                const loginButton = document.getElementById("loginButton");
+                const loginForm = document.getElementById("loginForm");
+
+                // Toggle visibility of elements
+                titleRet.style.display = "block";
+                titleRetDes.style.display = "block";
+                loginButton.style.display = "block";
+                loginForm.style.display = "none";
+            }
+
+        function submitLoginForm() {
+            const emailInput = document.getElementById("username");
+            const passwordInput = document.getElementById("password");
+
+            const enteredEmail = emailInput.value;
+            const enteredPassword = passwordInput.value;
+
+            // Load the user accounts from the "accounts.json" file
+            fetch("/database/accounts.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    const users = data.users;
+                    const user = users.find(
+                        (account) => account.email === enteredEmail && account.password === enteredPassword
+                    );
+
+                    if (user) {
+                        // User found, show success message and perform further actions
+                        document.getElementById("loginForm").style.display = "none";
+                        document.querySelector(".titleRet").style.display = "block";
+                        const titleRetDes = document.querySelector(".titleRetDes");
+                        const welcomeMessage = document.getElementById("welcomeMessage");
+                        welcomeMessage.innerText = user.name ? "Welcome, " + user.name + "!" : "Welcome";
+                        titleRetDes.style.display = "block";
+                        document.getElementById("loginButton").style.display = "none";
+                    } else {
+                        // User not found or incorrect credentials
+                        alert("Invalid email or password. Please try again.");
+                        // You can also clear the input fields here if needed
+                    }
+                })
+                .catch((error) => console.error("Error loading accounts:", error));
+        }
+        </script>
+    </head>
+    <body>
+        <div class="containerTitle">
+            <h1 class="titleRet">Retention Tool</h1>
+            <p class="titleRetDes">Designed by Laurence. <span id="welcomeMessage"></span></p>
+
+            <!-- Add the Back and Submit buttons within the login-form div -->
+            <div class="login-form" id="loginForm" style="display: none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <button class="back-button" onclick="btnBack_onClick()">Back</button>
+            <button class="login-button" onclick="submitLoginForm()">Start</button>
+            </div>
+
+            <button class="login-button" onclick="btnLogin_onClick()" id="loginButton">Login</button>
+        </div>
+
+    </body>
+</html>

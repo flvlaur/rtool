@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RetentionTool - Naplex MVC.props" />
+</Project>

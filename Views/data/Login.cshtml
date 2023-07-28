@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "RetentionTool - Naplex";
+}
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body onload="window_onLoad()" style="background-image: url('~/data/Home.png');">
+    <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+        <!-- SVG content here (copy the content from the original SVG) -->
+    </svg>
+    <h3 class="dissolve">Retention Tool</h3>
+    <h3 class="dissolve">Developed by Laurence - v1.0.4</h3>
+
+    <script>
+        function window_onLoad() {
+            document.body.style.backgroundColor = "lightgreen";
+            var timer = setTimeout(function () {
+                window.location = "@Url.Content("~/data/Login.html")";
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+
